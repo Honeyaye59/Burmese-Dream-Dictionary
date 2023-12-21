@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burmese Dream Dictionary</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon" width="60px" height="60px">
+    <!-- Start CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- End CSS  -->
+    <!-- Start FontAwesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- End FontAwesome cdn -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">အိပ်မက် အဘိဓာန်</h1>
+        <p>အက္ခရာအစဉ်အတိုင်းသိရှိနိုင်ရန် သက်ဆိုင်ရာအက္ခရာအားရွေးချယ်ပါ</p>
+        <select name="select-letter" id="select-letter" class="select-letter">
+            <option selected>ရွေးပါ</option>
+            <option value="က">က</option>
+            <option value="ခ">ခ</option>
+            <option value="ဂ">ဂ</option>
+            <option value="င">င</option>
+            <option value="စ">စ</option>
+            <option value="ဆ">ဆ</option>
+            <option value="ဇ">ဇ</option>
+            <option value="ဈ">ဈ</option>
+            <option value="ည">ည</option>
+            <option value="တ">တ</option>
+            <option value="ထ">ထ</option>
+            <option value="ဒ">ဒ</option>
+            <option value="ဓ">ဓ</option>
+            <option value="န">န</option>
+            <option value="ပ">ပ</option>
+            <option value="ဖ">ဖ</option>
+            <option value="ဗ">ဗ</option>
+            <option value="ဘ">ဘ</option>
+            <option value="မ">မ</option>
+            <option value="ယ">ယ</option>
+            <option value="ရ">ရ</option>
+            <option value="လ">လ</option>
+            <option value="ဝ">ဝ</option>
+            <option value="သ">သ</option>
+            <option value="ဟ">ဟ</option>
+            <option value="အ">အ</option>
+
+
+        </select>
+        <br>
+        <button class="result-btn" id="result-btn" onclick="toggleResult()"> <i class="fa-solid fa-caret-right" ></i>&nbsp;&nbsp;&nbsp;<span>ရလဒ်ဖတ်ရှုရန်မြားကိုနှိပ်ပါ</span></button>
+        <ul class="letter-result hidden" id="letter-result"></ul>
+        <p> အိပ်မက်မှသတ္တဝါ , အရာဝတ္တု အားမြန်မာစာဖြင့်ရှာနိုင်သည်။ </p>
+        <input type="text" id="text-input" class="text-input">
+        <div>
+            <button class="search-btn" id="search-btn">ရှာ</button>
+            <button class="delete-btn" id="delete-btn">ဖျက်</button>
+        </div>
+        <ul class="input-result" id="input-result"></ul>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
+
+<i class="fa-solid fa-caret-down"></i>
